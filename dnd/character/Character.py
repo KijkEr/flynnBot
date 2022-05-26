@@ -1,4 +1,4 @@
-from flynnbot.helper_functions import read_yaml
+from dnd.helper_functions import read_yaml
 
 
 class Character:
