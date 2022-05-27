@@ -1,2 +1,19 @@
 Flynn:
-  class: Rogue
+  characterClass: Rogue
+  level: 7
+  hitpoints: 40
+  race: human
+  ac: 14
+  weapons:
+    1: Eduard Triponkie
+    2: Dagger
+
+Brando:
+  characterClass: Fighter
+  subClass: Battlemaster
+  level: 7
+  hitpoints: 63
+  race: human
+  ac: 16
+  weapons:
+    1: Glaive +1

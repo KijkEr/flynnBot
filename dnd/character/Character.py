@@ -1,8 +1,28 @@
 from helper_functions import read_yaml
 
 
-class Character:
+class Character():
     def __init__(self, name):
         self.name = name
 
-    char = read_yaml("character.config", "characters.yaml")
+        self.character = read_yaml(
+            "character.config", "characters.yaml").get(name)
+
+    def showCharacter(self):
+        self.characterClass = self.character.get('characterClass')
+        self.hitpoints = self.character.get("hitpoints")
+        self.race = self.character.get("race")
+        self.ac = self.character.get("ac")
+        self.level = self.character.get("level")
+
+        print(
+            f"{self.name} is een level {self.level} {self.race} {self.characterClass}.")
+        print(f"{self.name} heeft {self.hitpoints} hitpoints en {self.ac} ac.")
+
+    def showWeapons(self):
+        weapons = self.character.get('weapons')
+
+        print(f"{self.name} heeft de volgende wapens:")
+
+        for key, value in weapons.items():
+            print(f"{key}: {value}")
