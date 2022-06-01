@@ -1,4 +1,11 @@
 Eduard Triponkie:
   damage: 1d8
-  properties: 
+  properties:
     - Finesse
+Glaive +1:
+  damage: 1d10
+  modifier: +1
+  Properties:
+    - Heavy
+    - Reach
+    - Two-Handed

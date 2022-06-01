@@ -6,3 +6,8 @@ c = Character(characterName)
 
 c.showCharacter()
 c.showWeapons()
+
+aanval = input("Wil je aanvallen? (y/n)")
+
+if aanval == 'y':
+    c.weaponAttack()

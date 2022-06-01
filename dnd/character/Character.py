@@ -1,12 +1,13 @@
-from helper_functions import read_yaml
+from helper_functions import readYaml
 
 
 class Character():
     def __init__(self, name):
         self.name = name
 
-        self.character = read_yaml(
+        self.character = readYaml(
             "character.config", "characters.yaml").get(name)
+        self.weapons = readYaml("character.config", "weapons.yaml")
 
     def showCharacter(self):
         self.characterClass = self.character.get('characterClass')

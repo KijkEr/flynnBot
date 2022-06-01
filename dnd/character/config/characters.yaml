@@ -17,3 +17,11 @@ Brando:
   ac: 16
   weapons:
     1: Glaive +1
+  attributes:
+    strength: 20
+    dexterity: 12
+    constitution: 16
+    intelligince: 8
+    wisdom: 12
+    charisma: 8
+  attackAttribute: strength
